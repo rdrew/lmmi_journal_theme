@@ -1,0 +1,5 @@
+global-styling:
+  css:
+    theme:
+      css/color-lime.css: {}
+      css/style.css: {}
