@@ -1,5 +1,15 @@
 global-styling:
   css:
     theme:
-      css/color-lime.css: {}
-      css/style.css: {}
+      css/style.css: {weight: 160, preprocess: FALSE}
+
+fonts:
+  version: VERSION
+  remote: //fonts.googleapis.com/css
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&subset=latin-ext: { type: external }
+  license:
+    name: SIL Open Font License, 1.1
+    url: //scripts.sil.org/OFL
+    gpl-compatible: true

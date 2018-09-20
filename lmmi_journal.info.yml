@@ -7,6 +7,11 @@ base theme: magazineplus
 # Defines libraries group in which we can add css/js.
 libraries:
   - lmmi_journal/global-styling
+  - lmmi_journal/fonts
+
+stylesheets-remove: core/themes/stable/css/views/views.module.css
+
+
 # Regions
 regions:
   slideout: 'Slideout'
