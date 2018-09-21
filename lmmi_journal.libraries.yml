@@ -2,6 +2,11 @@ global-styling:
   css:
     theme:
       css/style.css: {weight: 160, preprocess: FALSE}
+  
+  js:
+    js/js.js: {}
+  dependencies:
+    - core/jquery
 
 fonts:
   version: VERSION
