@@ -23,8 +23,12 @@ gulp.task('browser-sync', function() {
         plugins: ['bs-rewrite-rules'],
         rewriteRules: [
             {
-                match: '/themes/custom/lmmi_journal',
-                replace: ''
+                match: '/themes/custom/lmmi_journal/js/',
+                replace: '/js/'
+            },
+            {
+                match: '/themes/custom/lmmi_journal/css/',
+                replace: '/css/'
             }
         ]
     });
