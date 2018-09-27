@@ -89,7 +89,7 @@
     <div{{ content_attributes.addClass('node__main-content', 'clearfix') }}>
       {% block header_top %}
       {% endblock %}
-      <header class="node__header">
+      <header class="article-title-banner node__header">
         {% block title_area %}
           {{ title_prefix }}
           {% if not page %}
@@ -97,6 +97,9 @@
               <a href="{{ url }}" rel="bookmark">{{ label }}</a>
             </h2>
           {% else %}
+            <h2{{ title_attributes.addClass('node__title title') }}>
+              {{ label }}
+            </h2>
             <h2{{ title_attributes.addClass('node__title title sr-only') }}>
               {{ label }}
             </h2>
@@ -119,7 +122,15 @@
             </div>
           {% endif %}
         {% endblock %}
+
+      {{content.field_article_contributors}}
       </header>
+
+      {{content.group_article.group_article_text.field_journal_article_abstract}}
+      <hr>
+      {{content.group_article.group_article_text.body}}
+
+
       {% block content %}
         {{ content }}
       {% endblock %}
