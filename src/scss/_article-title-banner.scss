@@ -1,0 +1,31 @@
+.article-title-banner {
+    //display:none;
+    border: 1px solid #ccc;
+}
+.field--name-field-journal-article-abstract .field__label {
+    font-size: 2rem;
+}
+.node--type-journal-article {
+    .field--name-body figure {
+        margin-left: initial;
+        margin-right: initial;
+        float: left;
+        img {
+            border: 1px solid #ccc;
+            padding: 4px;
+            width: 200px;
+            float: left;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+    }
+    a[id^="footnote"] {
+        border: 1px solid #5d5d5d;
+        background: #5d5d5d;
+        color: #fff;
+        border-radius: 4px;
+        text-decoration: none;
+        padding: 2px 4px;
+        font-size:1.2rem;
+    }
+}

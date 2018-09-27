@@ -1,0 +1,101 @@
+//imports
+@import 'lp-preview-grid';
+@import 'lp-hero';
+@import 'article-title-banner';
+
+/*on-scroll menu */
+.fixed-header-enabled.onscroll .header-container ul.menu {
+  text-align: right;
+}
+
+
+
+
+/*================================================*/
+
+/*change header title fontsize*/
+.col-md-12 .site-name a {
+  font-size: 40px;
+}
+
+.header-top__container {
+  padding: 60px 0 55px;
+}
+
+/*change padding above content*/
+.main-content__section, .sidebar__section {
+  padding: 60px 0 70px;
+}
+
+
+/*modify issue info on landing page*/
+.path-frontpage .layout.layout--twocol-bricks {
+  display: block;
+}
+.path-frontpage .block-region-second-above {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.8rem;
+}
+.path-frontpage .block-region-second-above > * {
+  margin-right: 1rem;
+  display:flex;
+}
+.path-frontpage .block-region-second-above > .block-entity-fieldnodetitle::after{
+  content: ",";
+}
+.path-frontpage .block-region-second-above > .block-entity-fieldnodefield-issue-year::after{
+  content: ",";
+}
+
+
+.path-frontpage .block-region-second-above .field--name-field-issue-number {
+  display:flex;
+}
+
+/*tweak images added to articles*/
+details#journal-article-text-tab img,
+.path-frontpage .node--view-mode-teaser img {
+  border: 1px solid #ccc;
+  padding: 4px;
+  width: 200px;
+  float: left;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.field__label {
+  /*font-family: 'Merriweather', Georgia, Times New Roman, Serif;*/
+  /*font-family: 'Merriweather', Georgia, Times New Roman, Serif;*/
+  /*font-family: 'Merriweather', Georgia, Times New Roman, Serif;*/
+  font-family: 'Libre Baskerville', serif;
+}
+.field--name-field-issue-number .field__label {
+  font-family: inherit;
+  font-weight: initial;
+}
+.path-frontpage .node--view-mode-teaser {
+  padding: 0 0 30px 0;
+  margin-bottom: 30px;
+}
+
+
+.logo {
+  width:110px;
+}
+/*headings*/
+.hff-01 h1,
+.hff-01 h2,
+.hff-01 h3,
+.hff-01 h4,
+.hff-01 h5,
+.hff-01 h6,
+.hff-01 .tp-caption__title,
+.hff-01 .tp-caption__subtitle,
+.sff-01 .site-name,
+.slff-01 .site-slogan,
+.hff-01 .nav-tab__title {
+  font-family: 'Libre Baskerville', Georgia, Times New Roman, Serif;
+}
+.site-name {
+  font-size:12rem;
+}
