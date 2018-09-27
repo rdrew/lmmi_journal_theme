@@ -1,0 +1,29 @@
+
+/*====lp article preview cards==================*/
+.preview-card__grid-row {
+  display: flex;
+  justify-content: space-between;
+}
+.preview-card {
+  box-shadow: 0 2px 14px rgba(100, 100, 100, 0.1), 0 2px 2px rgba(100, 100, 100, 0.1);
+  border: 1px solid #e4e4e4;
+}
+.preview-card {
+  margin: 0 1em 2em 1em;
+  height: 250px
+}
+.preview-card:last-child {
+
+  margin: 0 0 2em 1em;
+
+}
+.preview-card:first-child {
+
+  margin: 0 1em 2rem 0;
+
+}
+.preview-card__caption {
+  margin: 10px;
+}
+
+

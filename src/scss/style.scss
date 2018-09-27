@@ -1,60 +1,11 @@
-/*==========Landing Page Hero Image===========*/
-
-
-.header-top {
-background: blue;
-background: url(../img/DS2_2648.jpg);
-}
-.header-top {
-  background: blue;
-  background: url(../img/DS2_2648.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  height: 350px;
-}
-/*.l-branding.site-branding {*/
-  /*background: url(/sites/all/themes/bowing_down_home/images/dirt_road.png);*/
-  /*background: url(../images/dirt_road.png);*/
-  /*background-size: cover;*/
-  /*height: 500px;*/
-  /*margin-bottom: 1em;*/
-  /*padding-bottom: 2em;*/
-/*}*/
-/*==========/Landing Page Hero Image===========*/
+//imports
+@import 'lp-preview-grid';
+@import 'lp-hero';
+@import 'article-title-banner';
 
 /*on-scroll menu */
 .fixed-header-enabled.onscroll .header-container ul.menu {
   text-align: right;
-}
-
-
-/*====lp article preview cards==================*/
-.preview-card__grid-row {
-  display: flex;
-  justify-content: space-between;
-}
-.preview-card {
-  box-shadow: 0 2px 14px rgba(100, 100, 100, 0.1), 0 2px 2px rgba(100, 100, 100, 0.1);
-  border: 1px solid #e4e4e4;
-}
-.preview-card {
-  margin: 0 1em 2em 1em;
-  height: 250px
-}
-.preview-card:last-child {
-
-  margin: 0 0 2em 1em;
-
-}
-.preview-card:first-child {
-
-  margin: 0 1em 2rem 0;
-
-}
-.preview-card__caption {
-  margin: 10px;
 }
 
 
