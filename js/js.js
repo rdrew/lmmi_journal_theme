@@ -1,8 +1,9 @@
 (function ($, Drupal) {
 
-  Drupal.behaviors.myAwesomeJs = {
+  Drupal.behaviors.footnote_tooltips = {
     attach: function attach(context, settings) {
         //js goes here
+        $('.menu').remove();
     }
   };
 

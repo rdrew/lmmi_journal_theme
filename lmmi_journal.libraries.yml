@@ -8,6 +8,11 @@ global-styling:
   dependencies:
     - core/jquery
 
+global-scripts:
+  js:
+    js/js.js: {}
+
+
 fonts:
   version: VERSION
   remote: //fonts.googleapis.com/css
