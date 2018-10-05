@@ -1,0 +1,16 @@
+//main menu
+
+$main_menu_dropdown_width: 16em;
+
+
+.sf-menu ul {
+    width: $main_menu_dropdown_width !important;
+}
+
+
+//author tasks 
+.link-info {
+    display:block;
+    font-style: italic;
+    color: #909090;
+}
