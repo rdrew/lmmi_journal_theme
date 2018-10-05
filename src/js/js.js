@@ -10,6 +10,16 @@
         }
     };
 
+    Drupal.behaviors.author_tasks_menu = {
+        attach: function attach(context, settings) {
+            $.each($(".menu__author-tasks .menu-item a "), function(index, value) {
+                var titleText = $(this).attr("title");
+                var linkInfo = '<span class="link-info">' +titleText+ '</span>';
+                console.log(titleText);
+                $(this).append(linkInfo);
+            });
+        }
+    };
 
 
 
