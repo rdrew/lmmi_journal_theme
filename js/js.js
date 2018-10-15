@@ -20,6 +20,16 @@
             });
         }
     };
+    Drupal.behaviors.stickyTOC = {
+        attach: function attach(context, settings) {
+
+       var height = $('.main-content__section .region').css("height");
+            console.log(height);
+
+        //$( ".toc-block--wide" ).wrap( "<div class='new' />");
+
+        }
+    };
 
 
 

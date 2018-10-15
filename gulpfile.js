@@ -41,6 +41,9 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function () {
   return gulp.src('./src/scss/**/*.scss')
+        .pipe(sass({
+            includePaths: ['./node_modules/breakpoint-sass/stylesheets']
+        }))
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
