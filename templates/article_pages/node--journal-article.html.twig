@@ -66,7 +66,7 @@
  * @see template_preprocess_node()
  */
 #}
-{{ dump() }}
+{#{{ dump() }}#}
 
 {#{{ kint(node) }}#}
 {%
@@ -82,6 +82,10 @@
 %}
 {{ attach_library('classy/node') }}
 {{ attach_library('magazineplus/node') }}
+
+
+
+
 <article{{ attributes.addClass(classes) }}>
   <div class="node__container">
     {% block node_side %}
@@ -123,13 +127,26 @@
           {% endif %}
         {% endblock %}
 
-      {{content.field_article_contributors}}
+      {#{{content.field_article_contributors}}#}
       </header>
 
-      {{content.group_article.group_article_text.field_journal_article_abstract}}
-      <hr>
-      {{content.group_article.group_article_text.body}}
 
+{#dummy content#}
+<!-- import -->
+{% include '@lmmi_journal/dummy_content/article-title-mockup.html.twig' %}
+<!-- /import -->
+<!-- import -->
+{% include '@lmmi_journal/dummy_content/article-mockup.html.twig' %}
+<!-- /import -->
+
+
+
+
+
+      {#{{content.group_article.group_article_text.field_journal_article_abstract}}#}
+      <hr>
+
+      {#{{content.group_article.group_article_text.body}}#}
 
       {% block content %}
         {{ content }}
