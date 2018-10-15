@@ -1,9 +1,12 @@
+@import 'breakpoint';
 //imports
+@import 'variables';
 @import 'lp-preview-grid';
 @import 'lp-hero';
 @import 'article-pages';
 @import 'tooltips';
 @import 'menus';
+@import 'toc';
 
 /*on-scroll menu */
 .fixed-header-enabled.onscroll .header-container ul.menu {
