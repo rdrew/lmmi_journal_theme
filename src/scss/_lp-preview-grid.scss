@@ -1,29 +1,66 @@
+.page-node-type-landing-page .main-content {
+    background-color: #f8f9fa;
+}
+
+.teaser-card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    background: #fff;
+    margin-bottom: 16px;
+    position:relative;
+    p {
+        padding-bottom: 0;
+    }
+    &__body {
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+    &__title {
+        font-family: $serif;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    }
+    &__author {
+        font-family: $sans-serif;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+    &__category {
+        background: #226f23;
+        color:#fff;
+        padding: .5rem 1.25rem;
+        text-transform: uppercase;
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #226f23;
+        padding: 10px;
+        color:#fff;
+    }
+}
 
 /*====lp article preview cards==================*/
 .preview-card__grid-row {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .preview-card {
-  box-shadow: 0 2px 14px rgba(100, 100, 100, 0.1), 0 2px 2px rgba(100, 100, 100, 0.1);
-  border: 1px solid #e4e4e4;
+    box-shadow: 0 2px 14px rgba(100, 100, 100, 0.1),
+        0 2px 2px rgba(100, 100, 100, 0.1);
+    border: 1px solid #e4e4e4;
 }
 .preview-card {
-  margin: 0 1em 2em 1em;
-  height: 250px
+    margin: 0 1em 2em 1em;
+    height: 250px;
 }
 .preview-card:last-child {
-
-  margin: 0 0 2em 1em;
-
+    margin: 0 0 2em 1em;
 }
 .preview-card:first-child {
-
-  margin: 0 1em 2rem 0;
-
+    margin: 0 1em 2rem 0;
 }
 .preview-card__caption {
-  margin: 10px;
+    margin: 10px;
 }
-
-
