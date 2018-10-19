@@ -82,6 +82,9 @@
 %}
 {{ attach_library('classy/node') }}
 {{ attach_library('magazineplus/node') }}
+
+
+
 <article{{ attributes.addClass(classes) }}>
   <div class="node__container">
     {% block node_side %}
@@ -89,39 +92,50 @@
     <div{{ content_attributes.addClass('node__main-content', 'clearfix') }}>
       {% block header_top %}
       {% endblock %}
-      <header class="node__header">
+
+{#main banner#}
+<header class="article-title-banner node__header paragraph-responsive-typography-enabled article-header">
+  <div class="bg-image">
+{{  content.field_article_highlight_image}}
+  </div>
+  <div class="article-info--wrapper">
+  
         {% block title_area %}
           {{ title_prefix }}
-          {% if not page %}
-            <h2{{ title_attributes.addClass('node__title') }}>
-              <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-            </h2>
-          {% else %}
-            <h2{{ title_attributes.addClass('node__title title sr-only') }}>
+            <h1{{ title_attributes.addClass('article--title title') }}>
               {{ label }}
-            </h2>
-          {% endif %}
+            </h1>
+            <h1{{ title_attributes.addClass('article--title title sr-only') }}>
+              {{ label }}
+            </h1>
           {{ title_suffix }}
         {% endblock %}
-        {% block meta_area %}
-          {% if display_submitted %}
-            <div class="node__meta">
-              {{ author_picture }}
-              <span{{ author_attributes.addClass('node__submitted-info') }}>
-                {% trans %}
-                  <span class="node__submitted-info-text">By</span> {{ author_name }} on 
-                  <span class="node__submitted-date">
-                    {{ date }}
-                  </span>
-                {% endtrans %}
-              </span>
-              {{ metadata }}
-            </div>
-          {% endif %}
-        {% endblock %}
-      </header>
+  <section class="article-header--metadata">
+    <div class="left">
+      <div class="article--contributor">
+        Robert N. Drew
+      </div>
+      <div class="article--contributor__affiliation">University of Prince Edward Island</div>
+    </div>
+    <div class="right">
+      <div class="article--type">Article</div>
+      <div class="article--date-published">
+     Published September 20, 2018 
+      </div>
+    </div>
+  </section>
+  </div>
+
+</header>
+
+      
+{#admin tabs#}
+{{ drupal_block('local_tasks_block') }}
+{#toc#}
+{{ drupal_region('hidden_blocks_collection') }}
+{#main content#}
       {% block content %}
-        {{ content }}
+{{  content|without( 'field_article_highlight_image' )}}
       {% endblock %}
       {% block content_bottom %}
       {% endblock %}

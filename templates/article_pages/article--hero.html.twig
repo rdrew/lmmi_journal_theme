@@ -1,0 +1,33 @@
+<header class="article-title-banner node__header paragraph-responsive-typography-enabled article-header">
+  <div class="bg-image">
+{{  content.field_article_highlight_image}}
+  </div>
+  <div class="container article-info--wrapper">
+  
+        {% block title_area %}
+          {{ title_prefix }}
+            <h1{{ title_attributes.addClass('article--title title') }}>
+              {{ label }}
+            </h1>
+            <h1{{ title_attributes.addClass('article--title title sr-only') }}>
+              {{ label }}
+            </h1>
+          {{ title_suffix }}
+        {% endblock %}
+  <section class="article-header--metadata">
+    <div class="left">
+      <div class="article--contributor">
+        Robert N. Drew
+      </div>
+      <div class="article--contributor__affiliation">University of Prince Edward Island</div>
+    </div>
+    <div class="right">
+      <div class="article--type">Article</div>
+      <div class="article--date-published">
+     Published September 20, 2018 
+      </div>
+    </div>
+  </section>
+  </div>
+
+</header>
