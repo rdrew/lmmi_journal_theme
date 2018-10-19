@@ -74,7 +74,7 @@
  * @see html.html.twig
  */
 #}
-{{dump()}}
+{#{{dump()}}#}
 {% if page.slideout %}
   {# slideout #}
   <div class="clearfix slideout {{ slideout_background_color }}{{ (slideout_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (slideout_region_paddings) ? ' region--no-paddings' : '' }}">
@@ -277,17 +277,17 @@
   {# page-start #}
   <div id="page-start" class="clearfix page-start"></div>
 
-  {% if page.system_messages %}
-    <div class="system-messages clearfix">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            {{ page.system_messages }}
-          </div>
-        </div>
-      </div>
-    </div>
-  {% endif %}
+  {#{% if page.system_messages %}#}
+    {#<div class="system-messages clearfix">#}
+      {#<div class="container">#}
+        {#<div class="row">#}
+          {#<div class="col-md-12">#}
+            {#{{ page.system_messages }}#}
+          {#</div>#}
+        {#</div>#}
+      {#</div>#}
+    {#</div>#}
+  {#{% endif %}#}
 
   {% if page.highlighted_top %}
     {# highlighted-top #}
@@ -419,10 +419,17 @@
 
   {# main-content #}
   <div class="clearfix main-content region--dark-typography region--white-background  {{ main_content_separator }}">
-    <div class="container">
-      <div class="clearfix main-content__container">
-        <div class="row">
-          <section class="{{ main_grid_class }}">
+    {#<div class="container">#}
+      {#<div class="clearfix main-content__container">#}
+        {#<div class="row">#}
+          {#<section class="{{ main_grid_class }}">#}
+            
+    <div >
+      <div>
+        <div>
+          <section>
+
+
             {# main #}
             <div class="clearfix main-content__section{{ (main_content_animations == "enabled") ? ' fade' : '' }}{{ (main_content_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (main_content_region_paddings) ? ' region--no-paddings' : '' }}"
               {% if main_content_animations == "enabled" %}
@@ -434,6 +441,10 @@
             </div>
             {# EOF:main #}
           </section>
+
+
+
+{#sidebars#}
           {% if page.sidebar_first %}
             <aside class="{{ sidebar_first_grid_class }}">
               {# sidebar-first #}
@@ -458,6 +469,9 @@
               {# EOF:sidebar-second #}
             </aside>
           {% endif %}
+{#end of sidebars#}
+
+          
         </div>
       </div>
     </div>
