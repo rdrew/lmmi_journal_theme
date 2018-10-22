@@ -1,17 +1,17 @@
-
+//@format
 /*==========Landing Page Hero Image===========*/
 
-
 .hero {
-  background: blue;
-  background: url(../img/DS2_2648.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  height: 250px;
-  display: flex;
-  align-items: center;
+    //background: blue;
+    //background: url(../img/DS2_2648.jpg);
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //position: relative;
+    //height: 250px;
+    display: flex;
+    .header-top__container {
+        padding: 3rem 0 2rem 0;
+    }
+    align-items: center;
 }
-
-

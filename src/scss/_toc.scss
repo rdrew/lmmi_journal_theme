@@ -13,6 +13,10 @@ $toc_breakpoint: 768px;
 }
 
 .toc-block--wide {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 100px;
+    margin-top: 2rem;
     .toc--title {
         &[aria-expanded='true'] h2::after {
             //content: "\f146";//square
