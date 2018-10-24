@@ -31,6 +31,15 @@
     };
 
 
+    Drupal.behaviors.slickSliderInit = {
+        attach: function attach(context, settings) {
+
+       $('.lp-slideshow').slick();
+        }
+    };
+
+
+
 
 
 
