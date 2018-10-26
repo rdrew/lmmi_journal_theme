@@ -34,7 +34,13 @@
     Drupal.behaviors.slickSliderInit = {
         attach: function attach(context, settings) {
 
-       $('.lp-slideshow').slick();
+            $('.lp-slideshow').slick({
+                fade: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 8000,
+
+            });
         }
     };
 

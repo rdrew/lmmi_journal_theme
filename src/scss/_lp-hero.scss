@@ -15,3 +15,13 @@
     }
     align-items: center;
 }
+
+.slick-arrow {
+    z-index: 999;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev {
+    left: 0;
+}
