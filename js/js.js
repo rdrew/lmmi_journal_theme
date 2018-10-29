@@ -2,9 +2,14 @@
 
     Drupal.behaviors.footnote_popups = {
         attach: function attach(context, settings) {
-            $.each($("li[id^='footnote']"), function(index, value) {
+            $.each($("li.footnote"), function(index, value) {
+                //find the footnotes at the bottom and extract the text
                 var _footnoteText_ = $(value).text();
-                var _id_ = $(this).attr("id");
+                console.log(_footnoteText_);
+                //find the href of the related anchor from the id of this
+                var _id_ = $('.footnote-link', this).attr("id");
+                console.log(_id_);
+                //use the id to fing the links href and insert the text from the 1st var
                 $('a[href$="' + _id_ + '"]').attr('data-toggle', 'tooltip').attr('data-original-title', _footnoteText_).attr('title', '');
             });
         }
@@ -34,15 +39,16 @@
     Drupal.behaviors.slickSliderInit = {
         attach: function attach(context, settings) {
 
-            $('.lp-slideshow').slick({
-                fade: true,
-                speed: 1000,
-                autoplay: true,
-                autoplaySpeed: 8000,
-
-            });
+       $('.lp-slideshow').slick();
         }
     };
+//<a class="see-footnote" id="footnoterefviii_3w9ys6f" href="#footnoteviii_3w9ys6f">viii</a>
+
+
+//<li class="footnote">
+        //<a href="#footnoterefviii_3w9ys6f" id="footnoteviii_3w9ys6f" class="footnote-link">
+        //viii
+        //</a> Emily Climbs, p. 173.</li>
 
 
 
