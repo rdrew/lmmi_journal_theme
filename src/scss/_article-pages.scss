@@ -77,30 +77,40 @@ header.article-header {
 //}
 .article-info--wrapper {
 }
-.article {
-    &--contributor {
+.article-header--metadata {
+    .article--contributor {
         font-size: 27px;
         //line-height:36px;
         font-family: 'Libre Baskerville', Georgia, Times New Roman, Serif;
         font-weight: bold;
         font-style: italic;
     }
-    &--contributor__affiliation {
+    .field--name-field-affiliation-string,
+    .article--contributor__affiliation {
         font-size: 18px;
         text-transform: uppercase;
         //line-height:18px;
-        //font-style: italic;
+        font-weight: normal;
+        font-style: normal;
+        font-family: sans-serif;
     }
-    &--type {
+    .article--type {
         font-size: 18px;
         //line-height:18px;
         text-transform: uppercase;
+        a {
+            color: #fff;
+        }
     }
-    &--date-published {
+    .article--date-published {
         font-size: 18px;
         text-transform: uppercase;
         //line-height:18px;
         margin-top: 6px;
+
+        .field__label {
+            display: none;
+        }
     }
 }
 

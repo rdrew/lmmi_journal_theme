@@ -39,7 +39,13 @@
     Drupal.behaviors.slickSliderInit = {
         attach: function attach(context, settings) {
 
-       $('.lp-slideshow').slick();
+            $('.lp-slideshow').slick({
+                 fade: true,
+  cssEase: 'linear',
+                pauseOnHover: false,
+                autoplay: true,
+                autoplaySpeed: 5000
+            });
         }
     };
 //<a class="see-footnote" id="footnoterefviii_3w9ys6f" href="#footnoteviii_3w9ys6f">viii</a>
