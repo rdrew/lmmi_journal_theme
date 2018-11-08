@@ -48,6 +48,24 @@
             });
         }
     };
+
+    Drupal.behaviors.footnoteScroll = {
+        attach: function attach(context, settings) {
+
+
+            $('.see-footnote').on('click',function(e) {
+                e.preventDefault();
+                var offset = 100;
+                var target = this.hash;
+                if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+                $('html, body').stop().animate({
+                    'scrollTop': $(target).offset().top - offset
+                }, 500, 'swing', function() {
+                    // window.location.hash = target;
+                });
+            });
+        }
+    };
 //<a class="see-footnote" id="footnoterefviii_3w9ys6f" href="#footnoteviii_3w9ys6f">viii</a>
 
 
