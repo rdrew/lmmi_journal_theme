@@ -1,7 +1,7 @@
 {#{{ kint(node) }}#}
-{#{% set toc = drupal_entity('block', 'tableofcontents', check_access=false) %}#}
+{% set toc = drupal_entity('block', 'tableofcontents', check_access=false) %}
 {% set tabs = drupal_block('local_tasks_block') %}
-{#{{dump(toc)}}#}
+{{dump(toc|render|striptags|trim)}}
 {%
   set classes = [
     'node',
@@ -32,9 +32,9 @@
 
 
 
-            {#{% if toc is defined  %}#}
-              {#{{ toc  }}#}
-            {#{% endif %}#}
+            {% if toc is not empty %}
+              {{ toc  }}
+            {% endif %}
             {#start of article #}
             <div{{ content_attributes.addClass( 'node__main-content', 'clearfix') }}>
 
