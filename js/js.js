@@ -40,8 +40,8 @@
         attach: function attach(context, settings) {
 
             $('.lp-slideshow').slick({
-                 fade: true,
-  cssEase: 'linear',
+                fade: true,
+                cssEase: 'linear',
                 pauseOnHover: false,
                 autoplay: true,
                 autoplaySpeed: 5000
@@ -49,6 +49,23 @@
         }
     };
 
+    Drupal.behaviors.tocScroll = {
+        attach: function attach(context, settings) {
+
+
+            $('.toc a').on('click',function(e) {
+                e.preventDefault();
+                var offset = 100;
+                var target = this.hash;
+                if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+                $('html, body').stop().animate({
+                    'scrollTop': $(target).offset().top - offset
+                }, 500, 'swing', function() {
+                    // window.location.hash = target;
+                });
+            });
+        }
+    };
     Drupal.behaviors.footnoteScroll = {
         attach: function attach(context, settings) {
 
