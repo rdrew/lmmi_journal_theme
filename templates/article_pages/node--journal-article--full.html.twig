@@ -1,7 +1,7 @@
 {#{{ kint(node) }}#}
 {% set toc = drupal_entity('block', 'tableofcontents', check_access=false) %}
 {% set tabs = drupal_block('local_tasks_block') %}
-{{dump(toc|render|striptags|trim)}}
+{#{{dump(toc|render|striptags|trim)}}#}
 {%
   set classes = [
     'node',
