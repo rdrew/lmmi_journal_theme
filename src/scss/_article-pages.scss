@@ -1,4 +1,8 @@
 //@format
+//footnotes
+.footnote-list .container.item-list {
+    width: inherit;
+}
 .page-node-type-journal-article .main-content__section {
     padding-top: 0;
 }
@@ -38,7 +42,8 @@
         }
     }
     //footnotes
-    a[id^='footnote'] {
+    .see-footnote {
+        //a[id^='footnote'] {
         border: 1px solid #5d5d5d;
         background: #5d5d5d;
         color: #fff;
@@ -47,6 +52,15 @@
         padding: 2px 3px;
         font-size: 1.1rem;
         vertical-align: super;
+    }
+}
+.footnotes {
+    .footnote-multi {
+        float: none;
+        vertical-align: none;
+        position: initial;
+        top: initial;
+        font-size: initial;
     }
 }
 
