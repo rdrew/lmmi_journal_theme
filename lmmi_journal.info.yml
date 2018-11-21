@@ -11,7 +11,7 @@ libraries:
   - lmmi_journal/fonts
 
 stylesheets-remove: core/themes/stable/css/views/views.module.css
-
+stylesheets-remove: themes/custom/magazineplus_lmmi_journal/css/base/elements.css
 
 # Regions
 regions:
