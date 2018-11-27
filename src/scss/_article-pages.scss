@@ -1,4 +1,26 @@
 //@format
+//embedded images
+.align-right {
+    margin: 1em 0 1em 1em;
+}
+.align-left {
+    margin: 1em 1em 1em 0;
+}
+.align-center img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.node__main-content {
+    .field__label {
+        font-size: 16px;
+        text-transform: none;
+        font-weight: bold;
+    }
+    .field__item {
+        font-size: 16px;
+    }
+}
 //footnotes
 .footnote-list .container.item-list {
     width: inherit;
