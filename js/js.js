@@ -36,6 +36,12 @@
     };
 
 
+    Drupal.behaviors.article_keyword_copier = {
+        attach: function attach(context, settings) {
+
+            $('.field--name-field-journal-article-keywords').clone().appendTo("#toc-sections");
+        }
+    };
     Drupal.behaviors.slickSliderInit = {
         attach: function attach(context, settings) {
 
