@@ -2,16 +2,26 @@
 
     Drupal.behaviors.footnote_popups = {
         attach: function attach(context, settings) {
-            $.each($("li.footnote"), function(index, value) {
+            $.each($("ul.footnotes a"), function(index, value) {
                 //find the footnotes at the bottom and extract the text
-                var _footnoteText_ = $(value).text();
+                var _footnoteText_ = $(this).siblings(".endnote-text").text();
                 console.log(_footnoteText_);
                 //find the href of the related anchor from the id of this
-                var _id_ = $('.footnote-link', this).attr("id");
+                var _id_ = $(this).attr("id");
                 console.log(_id_);
                 //use the id to fing the links href and insert the text from the 1st var
                 $('a[href$="' + _id_ + '"]').attr('data-toggle', 'tooltip').attr('data-original-title', _footnoteText_).attr('title', '');
             });
+            //$.each($("li.footnote"), function(index, value) {
+                ////find the footnotes at the bottom and extract the text
+                //var _footnoteText_ = $(value).text();
+                //console.log(_footnoteText_);
+                ////find the href of the related anchor from the id of this
+                //var _id_ = $('.footnote-link', this).attr("id");
+                //console.log(_id_);
+                ////use the id to fing the links href and insert the text from the 1st var
+                //$('a[href$="' + _id_ + '"]').attr('data-toggle', 'tooltip').attr('data-original-title', _footnoteText_).attr('title', '');
+            //});
         }
     };
 
@@ -40,6 +50,18 @@
         attach: function attach(context, settings) {
 
             $('.field--name-field-journal-article-keywords').clone().appendTo("#toc-sections");
+        }
+    };
+    Drupal.behaviors.ckSliderInit = {
+        attach: function attach(context, settings) {
+
+            //$('.field--name-field-image-set-images').slick({
+                ////fade: true,
+                ////cssEase: 'linear',
+                ////pauseOnHover: false,
+                ////autoplay: true,
+                ////autoplaySpeed: 5000
+            //});
         }
     };
     Drupal.behaviors.slickSliderInit = {
