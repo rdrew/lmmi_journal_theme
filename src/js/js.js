@@ -52,18 +52,6 @@
             $('.field--name-field-journal-article-keywords').appendTo("#toc-sections");
         }
     };
-    Drupal.behaviors.ckSliderInit = {
-        attach: function attach(context, settings) {
-
-            //$('.field--name-field-image-set-images').slick({
-                ////fade: true,
-                ////cssEase: 'linear',
-                ////pauseOnHover: false,
-                ////autoplay: true,
-                ////autoplaySpeed: 5000
-            //});
-        }
-    };
     Drupal.behaviors.slickSliderInit = {
         attach: function attach(context, settings) {
 
@@ -111,14 +99,16 @@
             });
         }
     };
-//<a class="see-footnote" id="footnoterefviii_3w9ys6f" href="#footnoteviii_3w9ys6f">viii</a>
 
+    Drupal.behaviors.slideLink = {
+        attach: function attach(context, settings) {
+            $( ".slideshow-slide header" ).each(function( index ) {
+                let url = $("a.slide_link", this).attr("href");
+                $( this ).wrap('<a href="' + url + '"></a>');
+            });
 
-//<li class="footnote">
-        //<a href="#footnoterefviii_3w9ys6f" id="footnoteviii_3w9ys6f" class="footnote-link">
-        //viii
-        //</a> Emily Climbs, p. 173.</li>
-
+        }
+    };
 
 
 
