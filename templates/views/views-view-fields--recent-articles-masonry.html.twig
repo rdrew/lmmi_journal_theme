@@ -8,7 +8,7 @@
     {% set _icon_ = 'fa-volume-up' %} 
     {% set _color_ = 'red' %} 
 	{% elseif fields.field_article_type.content|striptags|trim == "Blog post"  %}
-    {% set _icon_ = 'fa-volume-up' %} 
+    {% set _icon_ = 'fa-rss' %} 
     {% set _color_ = 'green' %} 
 	{% elseif fields.field_article_type.content|striptags|trim == "Creative writing"  %}
     {% set _icon_ = 'fa-pencil-square-o' %} 
@@ -34,6 +34,11 @@
   </span>
     <div class="teaser-card__category">
     {{ fields.field_article_type.content }}
+{% if  fields.field_article_peer_reviewed.content |striptags|trim == "Yes"  %}
+  <span class="peer-reviewed">
+  - peer reviewed
+  </span>
+{% endif   %}
 </div>
   <div class="teaser-card__body card-body">
     <p class="teaser-card__title"> {{ fields.title.content }} </p>
