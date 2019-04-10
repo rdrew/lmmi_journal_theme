@@ -1,7 +1,7 @@
 {#{{ kint(node) }}#}
-{% set toc = drupal_entity('block', 'tableofcontents', check_access=false) %}
+{#{% set toc = drupal_entity('block', 'tableofcontents', check_access=false) %}#}
 {% set tabs = drupal_block('local_tasks_block') %}
-{#{{dump(toc|render|striptags|trim)}}#}
+{#{{dump(toc)}}#}
 {%
   set classes = [
     'node',
@@ -17,7 +17,7 @@
 {{ attach_library('magazineplus/node') }}
 
             {#main banner#}
-            {% include '@lmmi_journal/article_pages/article--hero.html.twig' %}
+            {#{% include '@lmmi_journal/article_pages/article--hero.html.twig' %}#}
 <div class="container">
   <div class="clearfix">
     <div class="row">
@@ -32,9 +32,9 @@
 
 
 
-            {% if toc is not empty %}
-              {{ toc  }}
-            {% endif %}
+            {#{% if toc is defined  %}#}
+              {#{{ toc  }}#}
+            {#{% endif %}#}
             {#start of article #}
             <div{{ content_attributes.addClass( 'node__main-content', 'clearfix') }}>
 
