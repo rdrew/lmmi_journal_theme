@@ -1,0 +1,41 @@
+//@format
+%fa-icon {
+}
+.article_attachment {
+    a {
+        line-height: calc(155% + 0.2vw);
+        font-size: calc(0.9em + 0.3vw);
+        text-decoration: underline;
+    }
+}
+
+.article_attachment {
+    .file {
+        background-image: none;
+        padding-left: 0px;
+        &:before {
+            display: inline-block;
+            font: normal normal normal 18px/1 FontAwesome;
+            font-size: 1.8em;
+            margin-right: 5px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            content: '\f15b';
+        }
+        &--video {
+            &:before {
+                content: '\f1c8';
+            }
+        }
+        &--audio {
+            &:before {
+                content: '\f1c7';
+            }
+        }
+        &--application-pdf {
+            &:before {
+                content: '\f1c1';
+            }
+        }
+    }
+}
