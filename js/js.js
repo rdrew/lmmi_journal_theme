@@ -2,51 +2,23 @@
 
     Drupal.behaviors.footnote_popups = {
         attach: function attach(context, settings) {
-            /*
-                //target he footnotes list
-            $.each($(".footnote-list ul.footnotes a"), function(index, value) {
-                //find the footnotes at the bottom and extract the text
-                var _footnoteText_ = $(this).siblings(".endnote-text").text();
-                //var _bibCiteText_ = $(this).siblings(".endnote-text").text();
-                console.log(_footnoteText_);
-                //find the href of the related anchor from the id of this
-                var _id_ = $(this).attr("id");
-                console.log(_id_);
-                //use the id to fing the links href and insert the text from the 1st var
-                $('a[href$="' + _id_ + '"]').attr('data-toggle', 'tooltip').attr('data-original-title', _footnoteText_).attr('title', '');
-            }); */
-
-
 
             $.each($(".footnote-list ul.footnotes a"), function(index, value) {
                 //find the footnotes at the bottom and extract the text
                 //var _footnoteText_ = $(this).siblings(".csl-bib-body").text();
-                var _footnoteText_ = $(this).siblings(".bibcite-citation").text();
-                var _footnoteText02_ = $(this).siblings(".endnote-text").text();
+                var _footnoteBibcite_ = $(this).siblings(".bibcite-citation").text();
+                var _footnoteEndnote_ = $(this).siblings(".endnote-text").text();
                 //find the href of the related anchor from the id of this
                 var _id_ = $(this).attr("id");
-                console.log("start");
-                console.log(_id_);
-                console.log(_footnoteText_);
-                console.log(_footnoteText02_);
-                console.log("end");
+                var _footnoteText_ = _footnoteBibcite_.concat(_footnoteEndnote_);
+                //console.log("start");
+                //console.log(_id_);
+                //console.log(_footnoteBibcite_);
+                //console.log(_footnoteEndnote_);
+                //console.log("end");
                 //use the id to fing the links href and insert the text from the 1st var
                 $('a[href$="' + _id_ + '"]').attr('data-toggle', 'tooltip').attr('data-original-title', _footnoteText_).attr('title', '');
             });
-
-
-
-
-            //$.each($("li.footnote"), function(index, value) {
-                ////find the footnotes at the bottom and extract the text
-                //var _footnoteText_ = $(value).text();
-                //console.log(_footnoteText_);
-                ////find the href of the related anchor from the id of this
-                //var _id_ = $('.footnote-link', this).attr("id");
-                //console.log(_id_);
-                ////use the id to fing the links href and insert the text from the 1st var
-                //$('a[href$="' + _id_ + '"]').attr('data-toggle', 'tooltip').attr('data-original-title', _footnoteText_).attr('title', '');
-            //});
         }
     };
 
