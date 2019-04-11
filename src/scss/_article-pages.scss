@@ -202,18 +202,25 @@ header.article-header {
     }
 }
 //notes
+.footnote-list .footnotes a:after {
+    content: '.' !important;
+}
 .footnote-list {
     .footnotes {
-        font-size: 18px;
+        font-size: 16px;
         a {
-            font-weight: bold;
+            /*font-weight: bold;*/
+            &:after {
+                content: '.';
+            }
         }
     }
     .item-list ul li span {
-        font-size: 18px;
-        font-style: italic;
+        font-size: 15px;
+        font-style: normal;
         font-weight: 400;
         padding-left: 5px;
+        margin-bottom: 1rem;
     }
 }
 
@@ -270,13 +277,20 @@ h3.field-group-format-toggler.accordion-item {
 }
 
 .bibcite-reference {
-    font-size: 18px;
-    font-style: italic;
+    font-size: 15px;
+    font-style: normal;
     font-weight: 400;
     padding-left: 5px;
+    margin-bottom: 1rem;
 }
 .field--name-field-bibcite-fn-works-cited .field__label {
+    border-bottom: 1px solid #333;
     font-size: 30px;
     font-weight: normal;
     margin-top: 1rem;
+}
+.footnote-list:before {
+    content: 'Notes';
+    font-size: 30px;
+    font-family: $serif;
 }
