@@ -55,8 +55,8 @@
       </div>
     </div>
     <div class="right">
-      {#<div class="article--type">{{ articleType}} </div>#}
-      <div class="article--type with-icon {{_icon_}}">{{ content.field_article_type|field_value }} </div>
+        <!--      <div class="article--type">{{ articleType}} </div> -->
+      <div class="article--type {{_icon_}}">{{ content.field_article_type|field_value }} </div>
       <div class="article--date-published">
         {{pubDate}} </div>
     </div>
