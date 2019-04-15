@@ -217,9 +217,12 @@ pre:hover {
   transition: all ease-in-out 2s;
 }
 blockquote {
-  padding: 25px 0 5px;
+  //padding: 25px 0 5px;
+  padding: 10px 20px;
   margin: 0 0 25px;
-  border-left-width: 0px;
+  //border-left-width: 0px;
+  border-top: none;
+border-left: 5px solid #eee;
   position: relative;
   font-style: italic;
 }
@@ -243,7 +246,7 @@ blockquote:before {
   left: 0;
 }
 blockquote p:first-child:before {
-  content: "â€œ"
+  content: "- "
 }
 blockquote footer {
   font-style: normal;
