@@ -266,6 +266,8 @@ h3.field-group-format-toggler.accordion-item {
         color: #2e2e2e;
         border-bottom: 1px solid #2e2e2e;
         display: block;
+        /*@extend h2;*/
+        font-size: 30px;
     }
 }
 .back-to-top {
