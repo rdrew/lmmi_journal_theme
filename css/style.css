@@ -948,6 +948,10 @@ h3.field-group-format-toggler.accordion-item a {
   border-bottom: 1px solid #333;
   border-top: none !important; }
 
+.field--name-field-bibcite-fn-works-cited {
+  text-indent: -28px;
+  padding-left: 28px; }
+
 .article_attachment a {
   line-height: calc(155% + 0.2vw);
   font-size: calc(0.9em + 0.3vw);
