@@ -1,0 +1,27 @@
+/* search results styling */
+
+.view-row {
+border-bottom: 1px solid grey;
+padding: 10px;
+}
+
+span.views-field-title {
+text-decoration: underline;
+}
+
+/* misc styling */
+
+/* class to indent first line of paragraph */
+
+p.firstlineindent {
+    text-indent: 2em;
+}
+
+/* Works Cited styling */
+
+/* add italics to journal titles */
+span.citeproc-container-title {
+    font-style: italic;
+}
+
+

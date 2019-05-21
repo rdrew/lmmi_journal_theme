@@ -6,6 +6,9 @@
 {% if articleType == "Article"  %}
     {% set _icon_ = 'fa-file-text-o' %}
     {% set _color_ = 'blue' %}
+	{% elseif articleType == "Peer-reviewed article"  %}
+    {% set _icon_ = 'fa-file-text-o' %}
+    {% set _color_ = 'blue' %}
 	{% elseif articleType == "Audio/visual art"  %}
     {% set _icon_ = 'fa-volume-up' %}
     {% set _color_ = 'red' %}
