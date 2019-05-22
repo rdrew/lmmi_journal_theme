@@ -443,11 +443,15 @@ nav > h2,
   padding-bottom: 90px; }
 
 .masonry-layout .masonry-item {
-  width: 30.5%;
+  width: 100%;
   background-color: #f6f6f2;
   border: 0;
   margin: 0.5%;
   padding: 0; }
+
+@media (min-width: 768px) {
+  .masonry-layout .masonry-item {
+    width: 30.5%; } }
 
 .page-node-type-landing-page .main-content {
   background-color: #f8f9fa; }
@@ -611,6 +615,7 @@ figure.align-left {
   position: relative; }
 
 .article-info--wrapper {
+  padding: 0;
   position: absolute;
   top: 50%;
   left: 50%;

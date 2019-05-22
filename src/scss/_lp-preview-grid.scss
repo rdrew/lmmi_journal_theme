@@ -1,6 +1,9 @@
 //overrides
 .masonry-layout .masonry-item {
-    width: 30.5%;
+    width: 100%;
+    @include breakpoint($tablet-up) {
+        width: 30.5%;
+    }
     background-color: #f6f6f2;
     border: 0;
     margin: 0.5%;
@@ -129,4 +132,14 @@
 }
 .preview-card__caption {
     margin: 10px;
+}
+
+.masonry-layout {
+    //xxx
+    @include breakpoint(mobile-only) {
+
+        .masonry-item {
+            //position: initial !important;
+        }
+    }
 }
