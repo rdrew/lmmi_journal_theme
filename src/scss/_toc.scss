@@ -65,13 +65,23 @@ div#toc-sections {
             //list-style-type: none;
             //padding-left: 0;
 
-            font-family: $serif;
-            font-size: 1.8rem;
-            line-height: 1.8;
+            //font-family: $serif;
+            //font-size: 1.8rem;
+            //line-height: 1.8;
         }
         a {
             display: block;
             padding-left: 1rem;
+            font-family: $sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            //line-height: 16px;
+            border-bottom: 1px dotted #ccc;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            strong {
+                font-weight: normal;
+            }
             &:hover {
                 background: #ccc;
             }

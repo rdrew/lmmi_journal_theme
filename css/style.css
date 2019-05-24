@@ -652,9 +652,8 @@ figure.align-left {
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
-  padding: 2px 3px;
-  font-size: 1.1rem;
-  vertical-align: super; }
+  padding: 1px 3px;
+  font-size: 1.1rem; }
 
 .footnotes .footnote-multi {
   float: none;
@@ -901,14 +900,18 @@ h3.field-group-format-toggler.accordion-item a {
   border-top: 0px;
   padding-top: 1rem; }
 
-.toc-block--wide .toc--list ol {
-  font-family: "Libre Baskerville", Georgia, Times New Roman, Serif;
-  font-size: 1.8rem;
-  line-height: 1.8; }
-
 .toc-block--wide .toc--list a {
   display: block;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  font-family: "Lato", Helvetica Neue, Arial, Sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.toc-block--wide .toc--list a strong {
+  font-weight: normal; }
 
 .toc-block--wide .toc--list a:hover {
   background: #ccc; }
@@ -956,6 +959,9 @@ h3.field-group-format-toggler.accordion-item a {
 .field--name-field-bibcite-fn-works-cited {
   text-indent: -28px;
   padding-left: 28px; }
+
+.citeproc-title {
+  font-style: italic; }
 
 .article_attachment a {
   line-height: calc(155% + 0.2vw);
