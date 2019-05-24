@@ -625,9 +625,8 @@ figure.align-left {
 .field--name-field-journal-article-abstract .field__label {
   font-size: 2rem; }
 
-.node--type-journal-article .field--name-body figure {
-  margin-left: initial;
-  margin-right: initial; }
+h3 {
+  font-style: normal; }
 
 .node--type-journal-article .field--name-body figure.align-right {
   margin: 1em 0 1em 1em; }
@@ -959,6 +958,9 @@ h3.field-group-format-toggler.accordion-item a {
 .field--name-field-bibcite-fn-works-cited {
   text-indent: -28px;
   padding-left: 28px; }
+
+.citeproc-container-title {
+  font-style: italic; }
 
 .citeproc-title {
   font-style: italic; }

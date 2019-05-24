@@ -59,10 +59,13 @@ figure.align-left {
 .field--name-field-journal-article-abstract .field__label {
     font-size: 2rem;
 }
+h3 {
+    font-style: normal;
+}
 .node--type-journal-article {
     .field--name-body figure {
-        margin-left: initial;
-        margin-right: initial;
+        //margin-left: initial;
+        //margin-right: initial;
 
         &.align-right {
             margin: 1em 0 1em 1em;
