@@ -26,11 +26,11 @@
                 //find the href of the related anchor from the id of this
                 var _id_ = $(this).attr("id");
                 var _footnoteText_ = "test";
-                console.log("start");
-                console.log(_id_);
-                console.log(_footnoteBibcite_);
-                console.log(_footnoteEndnote_);
-                console.log("end");
+                //console.log("start");
+                //console.log(_id_);
+                //console.log(_footnoteBibcite_);
+                //console.log(_footnoteEndnote_);
+                //console.log("end");
                 //use the id to fing the links href and insert the text from the 1st var
                 $('a[href$="' + _id_ + '"]').attr('data-toggle', 'tooltip').attr('data-original-title', _footnoteText_).attr('title', '');
             });
@@ -51,6 +51,16 @@
         }
     };
 
+    Drupal.behaviors.citationItalics = {
+        attach: function attach(context, settings) {
+            $.each($(".csl-entry"), function(index, value) {
+                if ($('.citeproc-container-title', this).length ){
+                    console.log("yay");
+                    $('.citeproc-title', this).addClass("no-italics");
+                }
+            });
+        }
+    };
     Drupal.behaviors.author_tasks_menu = {
         attach: function attach(context, settings) {
             $.each($(".menu__author-tasks .menu-item a "), function(index, value) {

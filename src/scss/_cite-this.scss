@@ -22,4 +22,13 @@
 }
 .citeproc-title {
     font-style: italic;
+    &.no-italics {
+        font-style: normal;
+    }
+}
+.bibcite-citation {
+    display:inline;
+}
+span.endnote-text {
+    float: left;
 }

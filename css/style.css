@@ -965,6 +965,15 @@ h3.field-group-format-toggler.accordion-item a {
 .citeproc-title {
   font-style: italic; }
 
+.citeproc-title.no-italics {
+  font-style: normal; }
+
+.bibcite-citation {
+  display: inline; }
+
+span.endnote-text {
+  float: left; }
+
 .article_attachment a {
   line-height: calc(155% + 0.2vw);
   font-size: calc(0.9em + 0.3vw);
