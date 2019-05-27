@@ -45,7 +45,12 @@ figure.align-left {
     position: relative;
 }
 //hero text
-.article--title {
+h1.article--title {
+    @include breakpoint($mobile-only) {
+        text-align: center;
+        line-height: 1.2;
+        font-size: 1.8em;
+    }
     //font-size: 25px;
 }
 .article-info--wrapper {
@@ -115,16 +120,20 @@ header.article-header {
     //padding: 1rem;
 }
 .article-header--metadata {
-    display: flex;
-    justify-content: space-between;
-    .left,
-    .right {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .right {
-        justify-content: flex-end;
-        text-align: right;
+    text-align: center;
+    @include breakpoint($tablet-up) {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        .left,
+        .right {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .right {
+            justify-content: flex-end;
+            text-align: right;
+        }
     }
 }
 
@@ -199,7 +208,7 @@ header.article-header {
     grid-area: toc;
 }
 
-.node__container {
+.page-node-type-journal-article .node__container {
     @include breakpoint($desktop-up) {
         display: grid;
         column-gap: 2rem;

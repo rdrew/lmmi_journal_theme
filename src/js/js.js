@@ -26,6 +26,7 @@
                 //find the href of the related anchor from the id of this
                 var _id_ = $(this).attr("id");
                 var _footnoteText_ = "test";
+                var _footnoteText_ = _footnoteEndnote_;
                 //console.log("start");
                 //console.log(_id_);
                 //console.log(_footnoteBibcite_);
@@ -55,7 +56,7 @@
         attach: function attach(context, settings) {
             $.each($(".csl-entry"), function(index, value) {
                 if ($('.citeproc-container-title', this).length ){
-                    console.log("yay");
+                    //console.log("yay");
                     $('.citeproc-title', this).addClass("no-italics");
                 }
             });
