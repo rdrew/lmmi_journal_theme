@@ -1,7 +1,7 @@
 {% set imagePath = file_url(content.field_article_highlight_image|field_target_entity.image.entity.uri.value) %}
 <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ imagePath }}')" class="article-title-banner node__header paragraph-responsive-typography-enabled article-header">
   <div  class="container article-info--wrapper">
-  
+
         {% block title_area %}
           {{ title_prefix }}
             <h1{{ title_attributes.addClass('article--title title') }}>
@@ -14,16 +14,16 @@
         {% endblock %}
   <section class="article-header--metadata">
     <div class="left">
-      <div class="article--contributor">
-        Robert N. Drew
-      </div>
-      <div class="article--contributor__affiliation">University of Prince Edward Island</div>
+      {#<div class="article--contributor">#}
+        {#Robert N. Drew#}
+      {#</div>#}
+      {#<div class="article--contributor__affiliation">University of Prince Edward Island</div>#}
     </div>
     <div class="right">
-      <div class="article--type">Article</div>
-      <div class="article--date-published">
-     Published September 20, 2018 
-      </div>
+      {#<div class="article--type">Article</div>#}
+      {#<div class="article--date-published">#}
+     {#Published September 20, 2018 #}
+      {#</div>#}
     </div>
   </section>
   </div>
