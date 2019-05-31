@@ -17,7 +17,7 @@ var concat = require('gulp-concat');
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "https://lmmijournal.researchspaces.ca",
+        proxy: "https://journaloflmmontgomerystudies.ca",
         serveStatic: ['.'],
         files: ['./css/style.css','./js/js.js'],
         plugins: ['bs-rewrite-rules'],
