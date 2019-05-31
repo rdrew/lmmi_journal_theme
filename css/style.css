@@ -567,6 +567,9 @@ nav > h2,
 .preview-card__caption {
   margin: 10px; }
 
+.teaser-card ul {
+  list-style: none; }
+
 /*==========Landing Page Hero Image===========*/
 .hero {
   display: flex;
