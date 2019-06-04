@@ -239,16 +239,25 @@ p + blockquote {
     margin-top: 30px;
 }
 blockquote:before {
-    content: '';
-    width: 170px;
-    height: 5px;
-    background-color: #f4f4f4;
-    position: absolute;
-    top: 0;
-    left: 0;
+    //content: '';
+    //width: 170px;
+    //height: 5px;
+    //background-color: #f4f4f4;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
 }
 blockquote p:first-child:before {
     content: '- ';
+}
+blockquote p:first-child:before {
+    content: '“';
+    font-size: 3em;
+    /* line-height: 0em; */
+    vertical-align: baseline;
+    position: relative;
+    top: 0.4em;
+    color: #999;
 }
 blockquote footer {
     font-style: normal;
