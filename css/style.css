@@ -1016,6 +1016,54 @@ h3.field-group-format-toggler.accordion-item a {
 .article_attachment .file--application-pdf:before {
   content: '\f1c1'; }
 
+#views-exposed-form-search-page-1 .form--inline {
+  position: relative;
+  display: table;
+  border-collapse: separate; }
+
+.view-search .views-row {
+  font-size: 1.6rem;
+  font-family: "Libre Baskerville", Georgia, Times New Roman, Serif;
+  border: 1px solid #ccc;
+  background-color: #fff !important;
+  margin: 2rem 0;
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2); }
+
+.view-search .views-row .item-list ul {
+  list-style-position: outside;
+  list-style-type: none;
+  margin-left: 2rem; }
+
+.view-search .views-row .views-label {
+  font-family: "Lato", Helvetica Neue, Arial, Sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem; }
+
+.view-search .views-row .views-field-title {
+  font-size: 2rem; }
+
+.view-search .views-row .views-field-title a {
+  margin-bottom: 1rem; }
+
+.view-search .views-row .views-field {
+  margin-bottom: 1rem; }
+
+.view-search .views-row .field--type-name {
+  font-style: italic; }
+
+.view-search .views-row .views-field.views-field-field-authors-and-affiliations {
+  display: flex; }
+
+#views-exposed-form-search-page-1 .form--inline {
+  display: flex;
+  align-items: flex-end; }
+
+#views-exposed-form-search-page-1 .form--inline input#edit-submit-search {
+  margin: 0;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2); }
+
 /*on-scroll menu */
 .fixed-header-enabled.onscroll .header-container ul.menu {
   text-align: right; }

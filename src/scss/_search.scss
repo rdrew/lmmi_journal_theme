@@ -1,12 +1,52 @@
+//@format
 #views-exposed-form-search-page-1 .form--inline {
-        position: relative;
+    position: relative;
     display: table;
     border-collapse: separate;
 }
 .view-search .views-row {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-family: $serif;
     border: 1px solid #ccc;
     background-color: #fff !important;
-    margin: 2rem;
+    margin: 2rem 0;
     padding: 2rem;
+
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(166, 173, 201, 0.2);
+    .item-list ul {
+        list-style-position: outside;
+        list-style-type: none;
+        margin-left: 2rem;
+    }
+    .views-label {
+        font-family: $sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .views-field-title {
+        font-size: 2rem;
+        a {
+            margin-bottom: 1rem;
+        }
+    }
+    .views-field {
+        margin-bottom: 1rem;
+    }
+    .field--type-name {
+        font-style: italic;
+    }
+    .views-field.views-field-field-authors-and-affiliations {
+        display: flex;
+    }
+}
+#views-exposed-form-search-page-1 .form--inline {
+    display: flex;
+    align-items: flex-end;
+    input#edit-submit-search {
+        margin: 0;
+        box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+            0 15px 40px rgba(166, 173, 201, 0.2);
+    }
 }
