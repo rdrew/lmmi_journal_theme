@@ -17,7 +17,6 @@
 {{ attach_library('magazineplus/node') }}
 
             {#main banner#}
-            {% include '@lmmi_journal/article_pages/article--hero.html.twig' %}
 <div class="container">
   <div class="clearfix">
     <div class="row">
@@ -32,9 +31,6 @@
 
 
 
-            {% if toc is not empty %}
-              {{ toc  }}
-            {% endif %}
             {#start of article #}
             <div{{ content_attributes.addClass( 'node__main-content', 'clearfix') }}>
 
@@ -46,6 +42,9 @@
 
               {#main content#}
               {% block content %}
+                <h1>
+                  {{ label  }}
+                </h1>
               {{  content|without( 'field_article_highlight_image', 'field_authors_and_affiliations' )}}
               {% endblock %}
               {% block content_bottom %}
