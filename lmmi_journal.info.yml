@@ -10,8 +10,10 @@ libraries:
   - lmmi_journal/global-scripts
   - lmmi_journal/fonts
 
-stylesheets-remove: core/themes/stable/css/views/views.module.css
-stylesheets-remove: themes/custom/magazineplus_lmmi_journal/css/base/elements.css
+stylesheets-remove: 
+  - core/themes/stable/css/views/views.module.css
+  - themes/custom/magazineplus_lmmi_journal/css/base/elements.css
+  - core/assets/vendor/jquery.ui/themes/base/theme.css
 
 # Regions
 regions:

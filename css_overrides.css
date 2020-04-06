@@ -17,6 +17,13 @@ p.firstlineindent {
     text-indent: 2em;
 }
 
+/* class to create a hanging paragraph */
+
+p.hangingindent {
+  padding-left: 2em ;
+  text-indent: -2em ;
+}
+
 /* Works Cited styling */
 
 /* add italics to journal titles */
