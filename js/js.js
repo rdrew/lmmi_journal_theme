@@ -83,6 +83,14 @@
     };
 
 
+
+
+    Drupal.behaviors.article_collection_copier = {
+        attach: function attach(context, settings) {
+
+            $('.field--name-field-collection').appendTo("#toc-sections ol");
+        }
+    };
     Drupal.behaviors.article_keyword_copier = {
         attach: function attach(context, settings) {
 
