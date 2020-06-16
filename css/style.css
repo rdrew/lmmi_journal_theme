@@ -754,17 +754,11 @@ h3 {
     grid-template-rows: auto;
     grid-template-areas: 'main toc'; } }
 
-.footnote-list .footnotes a:after {
-  content: '.' !important; }
-
 .footnote-list .footnotes {
   font-size: 16px; }
 
 .footnote-list .footnotes a {
   /*font-weight: bold;*/ }
-
-.footnote-list .footnotes a:after {
-  content: '.'; }
 
 .footnote-list .item-list ul li span {
   font-size: 15px;
