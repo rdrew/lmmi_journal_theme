@@ -451,7 +451,7 @@ nav > h2,
 .bottom-spacing-large {
   padding-bottom: 90px; }
 
-.masonry-layout .masonry-item {
+.masonry .masonry-item {
   width: 100%;
   background-color: #f6f6f2;
   border: 0;
@@ -459,7 +459,7 @@ nav > h2,
   padding: 0; }
 
 @media (min-width: 768px) {
-  .masonry-layout .masonry-item {
+  .masonry .masonry-item {
     width: 30.5%; } }
 
 .page-node-type-landing-page .main-content {
