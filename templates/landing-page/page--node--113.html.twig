@@ -432,6 +432,9 @@
               {% if main_content_animations == "enabled" %}
                 data-animate-effect="{{ main_content_animation_effect }}"
               {% endif %}>
+              <hr>
+              <h2 class="text-center">L.M. Montgomery &amp; Vision Forum</h2>
+{{ drupal_view('recent_articles_masonry', 'vision') }}
               {% if page.content %}
                 {{ page.content }}
               {% endif %}
