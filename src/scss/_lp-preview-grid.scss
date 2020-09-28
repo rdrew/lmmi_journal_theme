@@ -1,5 +1,5 @@
 //overrides
-.masonry-layout .masonry-item {
+.masonry .masonry-item {
     width: 100%;
     @include breakpoint($tablet-up) {
         width: 30.5%;
