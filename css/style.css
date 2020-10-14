@@ -1071,7 +1071,8 @@ h3.field-group-format-toggler.accordion-item a {
   padding: 60px 0 55px; }
 
 /*change padding above content*/
-.main-content__section, .sidebar__section {
+.main-content__section,
+.sidebar__section {
   padding: 60px 0 70px; }
 
 /*modify issue info on landing page*/
@@ -1088,10 +1089,10 @@ h3.field-group-format-toggler.accordion-item a {
   display: flex; }
 
 .path-frontpage .block-region-second-above > .block-entity-fieldnodetitle::after {
-  content: ","; }
+  content: ','; }
 
 .path-frontpage .block-region-second-above > .block-entity-fieldnodefield-issue-year::after {
-  content: ","; }
+  content: ','; }
 
 .path-frontpage .block-region-second-above .field--name-field-issue-number {
   display: flex; }
@@ -1139,5 +1140,8 @@ details#journal-article-text-tab img,
 
 .site-name {
   font-size: 12rem; }
+
+.path-taxonomy .article-info--wrapper {
+  padding: 3rem; }
 
 /*# sourceMappingURL=style.css.map */
