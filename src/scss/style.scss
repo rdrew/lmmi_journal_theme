@@ -14,14 +14,10 @@
 @import 'article_attachment';
 @import 'search';
 
-
 /*on-scroll menu */
 .fixed-header-enabled.onscroll .header-container ul.menu {
   text-align: right;
 }
-
-
-
 
 /*================================================*/
 
@@ -35,10 +31,10 @@
 }
 
 /*change padding above content*/
-.main-content__section, .sidebar__section {
+.main-content__section,
+.sidebar__section {
   padding: 60px 0 70px;
 }
-
 
 /*modify issue info on landing page*/
 .path-frontpage .layout.layout--twocol-bricks {
@@ -51,18 +47,21 @@
 }
 .path-frontpage .block-region-second-above > * {
   margin-right: 1rem;
-  display:flex;
+  display: flex;
 }
-.path-frontpage .block-region-second-above > .block-entity-fieldnodetitle::after{
-  content: ",";
+.path-frontpage
+  .block-region-second-above
+  > .block-entity-fieldnodetitle::after {
+  content: ',';
 }
-.path-frontpage .block-region-second-above > .block-entity-fieldnodefield-issue-year::after{
-  content: ",";
+.path-frontpage
+  .block-region-second-above
+  > .block-entity-fieldnodefield-issue-year::after {
+  content: ',';
 }
-
 
 .path-frontpage .block-region-second-above .field--name-field-issue-number {
-  display:flex;
+  display: flex;
 }
 
 /*tweak images added to articles*/
@@ -90,9 +89,8 @@ details#journal-article-text-tab img,
   margin-bottom: 30px;
 }
 
-
 .logo {
-  width:110px;
+  width: 110px;
 }
 /*headings*/
 .hff-01 h1,
@@ -109,5 +107,8 @@ details#journal-article-text-tab img,
   font-family: 'Libre Baskerville', Georgia, Times New Roman, Serif;
 }
 .site-name {
-  font-size:12rem;
+  font-size: 12rem;
+}
+.path-taxonomy .article-info--wrapper {
+  padding: 3rem;
 }
