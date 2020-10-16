@@ -82,13 +82,18 @@
         }
     };
 
+  Drupal.behaviors.article_collection_copier = {
+    attach: function attach(context, settings) {
 
-    Drupal.behaviors.article_keyword_copier = {
-        attach: function attach(context, settings) {
+      $('.field--name-field-collection').appendTo("#toc-sections ol");
+    }
+  };
+  Drupal.behaviors.article_keyword_copier = {
+    attach: function attach(context, settings) {
 
-            $('.field--name-field-journal-article-keywords').appendTo("#toc-sections");
-        }
-    };
+      $('.field--name-field-journal-article-keywords').appendTo("#toc-sections");
+    }
+  };
     Drupal.behaviors.slickSliderInit = {
         attach: function attach(context, settings) {
 
