@@ -111,7 +111,7 @@
         attach: function attach(context, settings) {
 
 
-            $('.toc a').on('click',function(e) {
+            $('.toc li a').on('click',function(e) {
                 e.preventDefault();
                 var offset = 100;
                 var target = this.hash;
