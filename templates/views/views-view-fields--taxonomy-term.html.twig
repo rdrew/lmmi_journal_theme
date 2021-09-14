@@ -1,0 +1,56 @@
+{#{% if fields.field_article_type.content|striptags|trim == "Article"  %}#}
+{#{{dump(fields.field_article_type.content|striptags|trim)}}#}
+
+{% if fields.field_article_type.content|striptags|trim == "Article"  %}
+    {% set _icon_ = 'fa-file-text-o' %}
+    {% set _color_ = 'blue' %}
+	{% elseif fields.field_article_type.content|striptags|trim == "Peer-reviewed article"  %}
+    {% set _icon_ = 'fa-users' %}
+    {% set _color_ = 'red' %}
+	{% elseif fields.field_article_type.content|striptags|trim == "Audio/visual art"  %}
+    {% set _icon_ = 'fa-volume-up' %}
+    {% set _color_ = 'red' %}
+	{% elseif fields.field_article_type.content|striptags|trim == "Blog post"  %}
+    {% set _icon_ = 'fa-rss' %}
+    {% set _color_ = 'green' %}
+	{% elseif fields.field_article_type.content|striptags|trim == "Creative writing"  %}
+    {% set _icon_ = 'fa-pencil-square-o' %}
+    {% set _color_ = 'teal' %}
+	{% elseif fields.field_article_type.content|striptags|trim == "News"  %}
+    {% set _icon_ = 'fa-newspaper-o' %}
+    {% set _color_ = 'purple' %}
+	{% elseif fields.field_article_type.content|striptags|trim == "Note"  %}
+    {% set _icon_ = 'fa-envelope-open-o' %}
+    {% set _color_ = 'aqua' %}
+	{% elseif fields.field_article_type.content|striptags|trim == "Notice"  %}
+    {% set _icon_ = 'fa-exclamation-circle' %}
+    {% set _color_ = 'teal' %}
+  {% else %}
+    {% set _icon_ = '' %}
+    {% set _color_ = '' %}
+{% endif   %}
+
+<div class="{{_color_}} teaser-card card mb-4 shadow-sm">
+{{ fields.field_article_highlight_image.content }}
+  <span class="teaser-card__icon">
+    <i class="fa {{_icon_}}" aria-hidden="true"></i>
+  </span>
+    <div class="teaser-card__category">
+    {{ fields.field_article_type.content }}
+{#{% if  fields.field_article_peer_reviewed.content |striptags|trim == "Yes"  %}#}
+  {#<span class="peer-reviewed">#}
+  {#- peer reviewed#}
+  {#</span>#}
+{#{% endif   %}#}
+</div>
+  <div class="teaser-card__body card-body">
+    <p class="teaser-card__title"> {{ fields.title.content }} </p>
+    <p class="teaser-card__author"> {{ fields.field_authors_and_affiliations.content }} </p>
+
+    </div>
+    {#<i class="fa fa-camera-retro"></i>#}
+    {#<i class="fa fa-newspaper-o" aria-hidden="true"></i>#}
+    {#<i class="fa fa-video-camera" aria-hidden="true"></i>#}
+    {#<i class="fa fa-file-text-o" aria-hidden="true"></i>#}
+    {#<i class="fa fa-film" aria-hidden="true"></i>#}
+  </div>
