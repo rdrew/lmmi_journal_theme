@@ -2,6 +2,7 @@ name: LMMI Journal
 type: theme
 description: Subtheme of Magazine Plus
 core: 8.x
+core_version_requirement: ^8 || ^9
 # Defines the base theme
 base theme: magazineplus
 # Defines libraries group in which we can add css/js.
